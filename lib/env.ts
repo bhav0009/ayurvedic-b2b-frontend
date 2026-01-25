@@ -95,13 +95,13 @@ export const sanityConfig = {
 // Email configuration
 export const emailConfig = {
   smtp: {
-    host: env.SMTP_HOST,
-    port: env.SMTP_PORT ? parseInt(env.SMTP_PORT) : 587,
-    user: env.SMTP_USER,
-    password: env.SMTP_PASSWORD,
-    from: env.SMTP_FROM,
+    host: process.env.SMTP_HOST,
+    port: process.env.SMTP_PORT ? parseInt(process.env.SMTP_PORT) : 587,
+    user: process.env.SMTP_USER,
+    password: process.env.SMTP_PASSWORD,
+    from: process.env.SMTP_FROM,
   },
   sendgrid: {
-    apiKey: env.SENDGRID_API_KEY,
+    apiKey: process.env.SENDGRID_API_KEY,
   },
 }
