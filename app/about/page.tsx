@@ -76,7 +76,7 @@ export default function AboutPage() {
                 </h2>
                 <div className="mt-6 space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Established in 1991, we, Sankalp Nutravedic is amongst the
+                    Established in 1991, we, Maharishi Atreya is amongst the
                     foremost names, indulged in manufacturing an extensive range of
                     Ayurvedic Syrups, Tablets, Capsules, malt, Powders and Herbal
                     Cosmetics etc. The offered products are extensively employed by

@@ -58,9 +58,9 @@ export function Footer() {
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
                 <span>
-                  Industrial Area, Haridwar,
+                  Industrial Area, Sonipat,
                   <br />
-                  Uttarakhand, India 249401
+                  Haryana, India,123456
                 </span>
               </div>
             </div>
