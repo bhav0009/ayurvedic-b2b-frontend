@@ -40,6 +40,7 @@ function parseEnv() {
   if (process.env.NODE_ENV === 'production' && !process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
     return {
       NODE_ENV: 'production',
+      NEXT_PUBLIC_SANITY_PROJECT_ID: 'demo-project',
       NEXT_PUBLIC_SANITY_DATASET: 'production',
       NEXT_PUBLIC_APP_URL: 'https://your-app.vercel.app',
       RATE_LIMIT_RPM: '60',
@@ -55,6 +56,7 @@ function parseEnv() {
     console.warn('Environment validation failed, using defaults:', error)
     return {
       NODE_ENV: process.env.NODE_ENV || 'development',
+      NEXT_PUBLIC_SANITY_PROJECT_ID: 'demo-project',
       NEXT_PUBLIC_SANITY_DATASET: 'production',
       NEXT_PUBLIC_APP_URL: 'http://localhost:3000',
       RATE_LIMIT_RPM: '60',
@@ -82,7 +84,7 @@ export const features = {
 
 // Sanity configuration
 export const sanityConfig = {
-  projectId: env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  projectId: env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'demo-project',
   dataset: env.NEXT_PUBLIC_SANITY_DATASET,
   token: env.SANITY_API_TOKEN,
   useCdn: isProduction,
