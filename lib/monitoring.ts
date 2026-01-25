@@ -1,1 +1,50 @@
-import * as Sentry from '@sentry/nextjs'\n\n// Performance monitoring\nexport function trackPageView(url: string) {\n  if (typeof window !== 'undefined' && window.gtag) {\n    window.gtag('config', process.env.NEXT_PUBLIC_GA_ID, {\n      page_path: url,\n    })\n  }\n}\n\n// Error tracking\nexport function trackError(error: Error, context?: Record<string, any>) {\n  console.error('Error tracked:', error)\n  \n  Sentry.captureException(error, {\n    tags: {\n      component: context?.component || 'unknown',\n    },\n    extra: context,\n  })\n}\n\n// Custom event tracking\nexport function trackEvent(action: string, category: string, label?: string) {\n  if (typeof window !== 'undefined' && window.gtag) {\n    window.gtag('event', action, {\n      event_category: category,\n      event_label: label,\n    })\n  }\n}\n\n// Performance metrics\nexport function trackPerformance(name: string, duration: number) {\n  if (typeof window !== 'undefined' && window.gtag) {\n    window.gtag('event', 'timing_complete', {\n      name,\n      value: Math.round(duration),\n    })\n  }\n}\n\n// Web Vitals tracking\nexport function trackWebVitals(metric: any) {\n  if (typeof window !== 'undefined' && window.gtag) {\n    window.gtag('event', metric.name, {\n      event_category: 'Web Vitals',\n      value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),\n      event_label: metric.id,\n      non_interaction: true,\n    })\n  }\n}\n\n// Security event tracking\nexport function trackSecurityEvent(event: string, details?: Record<string, any>) {\n  console.warn('Security event:', event, details)\n  \n  Sentry.addBreadcrumb({\n    message: `Security event: ${event}`,\n    level: 'warning',\n    data: details,\n  })\n}
+// Performance monitoring
+export function trackPageView(url: string) {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('config', process.env.NEXT_PUBLIC_GA_ID, {
+      page_path: url,
+    })
+  }
+}
+
+// Error tracking
+export function trackError(error: Error, context?: Record<string, any>) {
+  console.error('Error tracked:', error, context)
+}
+
+// Custom event tracking
+export function trackEvent(action: string, category: string, label?: string) {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', action, {
+      event_category: category,
+      event_label: label,
+    })
+  }
+}
+
+// Performance metrics
+export function trackPerformance(name: string, duration: number) {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', 'timing_complete', {
+      name,
+      value: Math.round(duration),
+    })
+  }
+}
+
+// Web Vitals tracking
+export function trackWebVitals(metric: any) {
+  if (typeof window !== 'undefined' && (window as any).gtag) {
+    (window as any).gtag('event', metric.name, {
+      event_category: 'Web Vitals',
+      value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+      event_label: metric.id,
+      non_interaction: true,
+    })
+  }
+}
+
+// Security event tracking
+export function trackSecurityEvent(event: string, details?: Record<string, any>) {
+  console.warn('Security event:', event, details)
+}

@@ -21,15 +21,6 @@ const config: Config = {
     },
   },
   plugins: [],
-  corePlugins: {
-    // Disable problematic utilities that cause CSS warnings
-    textSizeAdjust: false,
-    fontSmoothing: false,
-  },
-  future: {
-    // Disable experimental features that cause warnings
-    hoverOnlyWhenSupported: true,
-  },
 };
 
 export default config;
