@@ -42,6 +42,7 @@ function parseEnv() {
       NODE_ENV: 'production',
       NEXT_PUBLIC_SANITY_PROJECT_ID: 'demo-project',
       NEXT_PUBLIC_SANITY_DATASET: 'production',
+      SANITY_API_TOKEN: undefined,
       NEXT_PUBLIC_APP_URL: 'https://your-app.vercel.app',
       RATE_LIMIT_RPM: '60',
       NEXT_PUBLIC_ENABLE_ANALYTICS: 'true',
@@ -58,6 +59,7 @@ function parseEnv() {
       NODE_ENV: process.env.NODE_ENV || 'development',
       NEXT_PUBLIC_SANITY_PROJECT_ID: 'demo-project',
       NEXT_PUBLIC_SANITY_DATASET: 'production',
+      SANITY_API_TOKEN: undefined,
       NEXT_PUBLIC_APP_URL: 'http://localhost:3000',
       RATE_LIMIT_RPM: '60',
       NEXT_PUBLIC_ENABLE_ANALYTICS: 'true',
@@ -86,7 +88,7 @@ export const features = {
 export const sanityConfig = {
   projectId: env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'demo-project',
   dataset: env.NEXT_PUBLIC_SANITY_DATASET,
-  token: env.SANITY_API_TOKEN,
+  token: env.SANITY_API_TOKEN || undefined,
   useCdn: isProduction,
 }
 
