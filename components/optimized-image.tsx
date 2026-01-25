@@ -12,6 +12,7 @@ interface OptimizedImageProps {
   fill?: boolean
   sizes?: string
   quality?: number
+  loading?: 'lazy' | 'eager'
 }
 
 export function OptimizedImage({
@@ -24,6 +25,7 @@ export function OptimizedImage({
   fill = false,
   sizes,
   quality = 80,
+  loading = 'lazy',
 }: OptimizedImageProps) {
   // Handle Sanity image objects with optimization
   const imageUrl = typeof src === 'string' 
@@ -46,6 +48,7 @@ export function OptimizedImage({
         fill
         className={className}
         priority={priority}
+        loading={priority ? 'eager' : loading}
         sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
       />
     )
@@ -59,6 +62,7 @@ export function OptimizedImage({
       height={height || dimensions.height}
       className={className}
       priority={priority}
+      loading={priority ? 'eager' : loading}
       sizes={sizes}
       {...(srcSet && { srcSet })}
     />

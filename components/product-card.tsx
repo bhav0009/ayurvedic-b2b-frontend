@@ -18,6 +18,8 @@ export function ProductCard({ product }: ProductCardProps) {
           src={product.image || "/placeholder.svg"}
           alt={product.name}
           fill
+          priority={true}
+          loading="eager"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />

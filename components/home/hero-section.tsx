@@ -27,7 +27,7 @@ export function HeroSection() {
         <h1 className="mt-4 max-w-4xl text-balance font-serif text-4xl font-semibold text-primary-foreground sm:text-5xl lg:text-6xl">
           Premium Ayurvedic Products for Global Distribution
         </h1>
-        <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-primary-foreground/90">
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/90">
           Bridging ancient Ayurvedic wisdom with modern quality standards. Your
           trusted partner for herbal products, serving distributors, wholesalers,
           and healthcare professionals in over 50 countries.
