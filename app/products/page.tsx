@@ -5,7 +5,7 @@ import { ProductsGrid } from "@/components/products/products-grid";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Products | Maharishi Ayurveda",
+  title: "Products | Maharishi Atreya",
   description:
     "Explore our comprehensive range of premium Ayurvedic products including herbs, oils, powders, capsules, and traditional formulations.",
 };

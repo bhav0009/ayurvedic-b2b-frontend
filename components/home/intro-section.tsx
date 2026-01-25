@@ -11,7 +11,7 @@ export function IntroSection() {
         <div className="mt-8 space-y-6 text-muted-foreground">
           <p className="leading-relaxed">
             Ayurveda, the ancient science of life, has guided wellness practices
-            for over 5,000 years. At Maharishi Ayurveda, we honor this profound legacy by
+            for over 5,000 years. At Maharishi Atreya, we honor this profound legacy by
             sourcing the finest herbs from their native regions and processing
             them with meticulous care.
           </p>

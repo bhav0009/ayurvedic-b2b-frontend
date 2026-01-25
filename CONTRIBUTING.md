@@ -1,4 +1,4 @@
-# Contributing to Maharishi Ayurveda B2B Platform
+# Contributing to Maharishi Atreya B2B Platform
 
 ## 🤝 Welcome Contributors
 

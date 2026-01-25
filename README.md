@@ -1,8 +1,8 @@
-# Maharishi Ayurveda - B2B Platform
+# Maharishi Atreya - B2B Platform
 
 ## 🏢 Enterprise-Grade Ayurvedic Products Platform
 
-A professional B2B platform for Maharishi Ayurveda, showcasing premium herbal products to distributors, wholesalers, and healthcare professionals worldwide.
+A professional B2B platform for Maharishi Atreya, showcasing premium herbal products to distributors, wholesalers, and healthcare professionals worldwide.
 
 ## ✨ Features
 
@@ -167,13 +167,13 @@ npm start
 ## 🤝 Support
 
 For technical support or business inquiries:
-- Email: support@maharishiayurveda.com
+- Email: support@maharishiatreya.com
 - Documentation: [Project Wiki]
 - Issues: [GitHub Issues]
 
 ## 📄 License
 
-Proprietary - Maharishi Ayurveda. All rights reserved.
+Proprietary - Maharishi Atreya. All rights reserved.
 
 ---
 

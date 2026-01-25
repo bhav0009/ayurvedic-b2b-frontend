@@ -5,17 +5,17 @@ import { Mail, Phone, MapPin, Globe, MessageCircle } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Maharishi Ayurveda",
+  title: "Contact Us | Maharishi Atreya",
   description:
-    "Get in touch with Maharishi Ayurveda for B2B inquiries, bulk orders, export partnerships, and custom formulations.",
+    "Get in touch with Maharishi Atreya for B2B inquiries, bulk orders, export partnerships, and custom formulations.",
 };
 
 const contactInfo = [
   {
     icon: <Mail className="h-5 w-5" />,
     label: "Email",
-    value: "export@maharishiayurveda.com",
-    href: "mailto:export@maharishiayurveda.com",
+    value: "export@maharishiatreya.com",
+    href: "mailto:export@maharishiatreya.com",
   },
   {
     icon: <Phone className="h-5 w-5" />,

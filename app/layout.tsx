@@ -19,14 +19,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Maharishi Ayurveda | Premium B2B Ayurvedic Products Manufacturer',
+  title: 'Maharishi Atreya | Premium B2B Ayurvedic Products Manufacturer',
   description: 'Leading manufacturer and exporter of premium Ayurvedic herbal products. GMP certified, ISO compliant. Trusted by distributors, wholesalers, and healthcare professionals worldwide.',
   keywords: 'ayurvedic products, herbal products, B2B ayurveda, ayurvedic manufacturer, herbal exporter, wholesale herbs, GMP certified, ISO certified',
   generator: 'Next.js',
-  applicationName: 'Maharishi Ayurveda',
-  authors: [{ name: 'Maharishi Ayurveda' }],
-  creator: 'Maharishi Ayurveda',
-  publisher: 'Maharishi Ayurveda',
+  applicationName: 'Maharishi Atreya',
+  authors: [{ name: 'Maharishi Atreya' }],
+  creator: 'Maharishi Atreya',
+  publisher: 'Maharishi Atreya',
   robots: {
     index: true,
     follow: true,
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'Maharishi Ayurveda | Premium B2B Ayurvedic Products',
+    title: 'Maharishi Atreya | Premium B2B Ayurvedic Products',
     description: 'Leading manufacturer and exporter of premium Ayurvedic herbal products. GMP certified, ISO compliant.',
-    siteName: 'Maharishi Ayurveda',
+    siteName: 'Maharishi Atreya',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Maharishi Ayurveda | Premium B2B Ayurvedic Products',
+    title: 'Maharishi Atreya | Premium B2B Ayurvedic Products',
     description: 'Leading manufacturer and exporter of premium Ayurvedic herbal products.',
   },
 }

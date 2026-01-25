@@ -7,9 +7,9 @@ import { BadgeCheck, Target, Heart, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Maharishi Ayurveda",
+  title: "About Us | Maharishi Atreya",
   description:
-    "Learn about Maharishi Ayurveda - our story, Ayurvedic values, manufacturing standards, and commitment to quality herbal products.",
+    "Learn about Maharishi Atreya - our story, Ayurvedic values, manufacturing standards, and commitment to quality herbal products.",
 };
 
 const values = [
@@ -52,14 +52,14 @@ export default function AboutPage() {
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-medium uppercase tracking-widest text-primary">
-                About Maharishi Ayurveda
+                About Maharishi Atreya
               </p>
               <h1 className="mt-4 font-serif text-4xl font-semibold text-foreground sm:text-5xl">
                 Our Story
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                 Founded with a vision to share the healing wisdom of Ayurveda
-                with the world, Maharishi Ayurveda has grown from a small family business
+                with the world, Maharishi Atreya has grown from a small family business
                 to a global leader in premium herbal products.
               </p>
             </div>
@@ -72,37 +72,40 @@ export default function AboutPage() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div>
                 <h2 className="font-serif text-3xl font-semibold text-foreground sm:text-4xl">
-                  A Legacy of Wellness
+                  About Our Company
                 </h2>
                 <div className="mt-6 space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Our journey began over 25 years ago in the foothills of the
-                    Himalayas, where our founders recognized the untapped
-                    potential of India&apos;s rich botanical heritage. What started
-                    as a small operation supplying local practitioners has
-                    evolved into a comprehensive B2B enterprise serving partners
-                    across the globe.
+                    Established in 1991, we, Sankalp Nutravedic is amongst the
+                    foremost names, indulged in manufacturing an extensive range of
+                    Ayurvedic Syrups, Tablets, Capsules, malt, Powders and Herbal
+                    Cosmetics etc. The offered products are extensively employed by
+                    patrons for their longer shelf life, rich taste and easy to digest.
+                    These products are available in different packing options that
+                    meet on patrons demand.
                   </p>
                   <p className="leading-relaxed">
-                    Today, Maharishi Ayurveda operates state-of-the-art manufacturing
+                    Exceptional quality is the foundation of our company, and is the
+                    driving force behind all decisions; whether it's which materials
+                    to purchase or the best way to serve our customers.
+                  </p>
+                  <p className="leading-relaxed font-semibold text-primary">
+                    Our commitment to quality guarantees our success and your satisfaction.
+                  </p>
+                  <p className="leading-relaxed">
+                    Today, Maharishi Atreya operates state-of-the-art manufacturing
                     facilities that blend traditional Ayurvedic knowledge with
                     modern scientific rigor. Our team of Ayurvedic practitioners,
                     botanists, and quality specialists work together to create
                     products that honor ancient formulations while meeting
                     contemporary standards.
                   </p>
-                  <p className="leading-relaxed">
-                    We take pride in our direct relationships with farming
-                    communities, ensuring fair trade practices and sustainable
-                    cultivation methods that preserve both livelihoods and the
-                    environment.
-                  </p>
                 </div>
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
                   src="/images/about-manufacturing.jpg"
-                  alt="Maharishi Ayurveda manufacturing facility"
+                  alt="Maharishi Atreya manufacturing facility"
                   fill
                   priority
                   loading="eager"
@@ -208,7 +211,7 @@ export default function AboutPage() {
 
         <CTASection
           title="Interested in Partnership?"
-          description="Let's discuss how Maharishi Ayurveda can support your business with premium Ayurvedic products."
+          description="Let's discuss how Maharishi Atreya can support your business with premium Ayurvedic products."
           variant="centered"
         />
       </main>

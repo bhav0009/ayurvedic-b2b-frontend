@@ -18,7 +18,7 @@ export function WhyChooseUsSection() {
             Our Advantage
           </p>
           <h2 className="mt-4 font-serif text-3xl font-semibold text-foreground sm:text-4xl">
-            Why Partner with Maharishi Ayurveda
+            Why Partner with Maharishi Atreya
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             We combine traditional expertise with modern business practices to

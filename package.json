@@ -1,7 +1,7 @@
 {
   "name": "maharishi-ayurveda-b2b",
   "version": "1.0.0",
-  "description": "Enterprise B2B platform for Maharishi Ayurveda - Premium herbal products for distributors and healthcare professionals",
+  "description": "Enterprise B2B platform for Maharishi Atreya - Premium herbal products for distributors and healthcare professionals",
   "private": true,
   "scripts": {
     "build": "next build",

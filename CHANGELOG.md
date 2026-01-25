@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Maharishi Ayurveda B2B Platform will be documented in this file.
+All notable changes to the Maharishi Atreya B2B Platform will be documented in this file.
 
 ## [1.0.0] - 2024-01-18
 

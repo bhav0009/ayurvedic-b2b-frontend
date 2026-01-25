@@ -28,7 +28,7 @@ export function Navbar() {
               </div>
               <div className="hidden sm:flex items-center gap-2 text-primary">
                 <Mail className="h-4 w-4" />
-                <span className="font-medium">info@maharishiayurveda.com</span>
+                <span className="font-medium">info@maharishiatreya.com</span>
               </div>
             </div>
             <div className="text-muted-foreground">
@@ -49,7 +49,7 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
-                Maharishi Ayurveda
+                Maharishi Atreya
               </span>
               <span className="text-xs text-muted-foreground font-medium tracking-wide">
                 PREMIUM HERBAL PRODUCTS

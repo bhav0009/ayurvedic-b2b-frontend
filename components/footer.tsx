@@ -32,7 +32,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <Leaf className="h-8 w-8 text-primary" aria-hidden="true" />
               <span className="font-serif text-xl font-semibold text-foreground">
-                Maharishi Ayurveda
+                Maharishi Atreya
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
@@ -42,11 +42,11 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-3">
               <a
-                href="mailto:export@maharishiayurveda.com"
+                href="mailto:export@maharishiatreya.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
-                export@maharishiayurveda.com
+                export@maharishiatreya.com
               </a>
               <a
                 href="tel:+911234567890"
@@ -127,7 +127,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-border pt-8">
           <p className="text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Maharishi Ayurveda. All rights
+            &copy; {new Date().getFullYear()} Maharishi Atreya. All rights
             reserved.
           </p>
         </div>

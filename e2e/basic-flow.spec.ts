@@ -4,7 +4,7 @@ test.describe('Homepage', () => {
   test('should load homepage successfully', async ({ page }) => {
     await page.goto('/')
     
-    await expect(page.getByText('Maharishi Ayurveda')).toBeVisible()
+    await expect(page.getByText('Maharishi Atreya')).toBeVisible()
     await expect(page.getByText('Premium Ayurvedic Products')).toBeVisible()
   })
 

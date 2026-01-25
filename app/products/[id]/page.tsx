@@ -27,12 +27,12 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Product Not Found | Maharishi Ayurveda",
+      title: "Product Not Found | Maharishi Atreya",
     };
   }
 
   return {
-    title: `${product.name} | Maharishi Ayurveda`,
+    title: `${product.name} | Maharishi Atreya`,
     description: product.shortDescription,
   };
 }

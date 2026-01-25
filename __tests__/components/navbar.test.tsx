@@ -14,7 +14,7 @@ describe('Navbar', () => {
   it('renders logo and company name', () => {
     render(<Navbar />)
     
-    expect(screen.getByText('Maharishi Ayurveda')).toBeInTheDocument()
+    expect(screen.getByText('Maharishi Atreya')).toBeInTheDocument()
   })
 
   it('toggles mobile menu', () => {

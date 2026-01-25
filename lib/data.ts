@@ -19,6 +19,18 @@ export interface Category {
 
 export const categories: Category[] = [
   {
+    id: "cosmetics",
+    name: "Cosmetics",
+    description: "Premium herbal cosmetics and personal care products",
+    icon: "sparkles",
+  },
+  {
+    id: "syrups",
+    name: "Syrups",
+    description: "Ayurvedic health syrups and liquid formulations",
+    icon: "droplet",
+  },
+  {
     id: "herbs",
     name: "Herbs",
     description: "Premium quality dried herbs and botanicals",
@@ -51,6 +63,57 @@ export const categories: Category[] = [
 ];
 
 export const products: Product[] = [
+  {
+    id: "charcoal-herbal-soap",
+    name: "Charcoal Herbal Soap",
+    category: "cosmetics",
+    shortDescription: "Handmade premium charcoal soap for deep cleansing and detoxification",
+    description: "Our premium Charcoal Herbal Soap is handcrafted using activated charcoal and natural herbs. This luxurious soap provides deep cleansing, removes impurities, and detoxifies the skin naturally. Perfect for all skin types, especially oily and acne-prone skin.",
+    ingredients: ["Activated Charcoal", "Natural Herbs", "Coconut Oil", "Palm Oil", "Glycerin"],
+    benefits: [
+      "Deep cleansing and detoxification",
+      "Removes excess oil and impurities",
+      "Natural antibacterial properties",
+      "Suitable for all skin types",
+      "Handmade with premium ingredients",
+    ],
+    usage: "Wet the soap and create a rich lather. Gently massage onto wet skin and rinse thoroughly with water. Use daily for best results.",
+    image: "/images/4ca8eb_6f91b78b57fb48d2b68edcee16f86331~mv2 (1).jpeg",
+  },
+  {
+    id: "almond-body-butter",
+    name: "Almond Body Butter",
+    category: "cosmetics",
+    shortDescription: "Nourishing almond body butter for soft and supple skin",
+    description: "Luxurious Almond Body Butter enriched with pure almond oil and natural moisturizers. This rich, creamy formula deeply moisturizes the skin, provides long-lasting hydration, and leaves skin feeling soft, smooth, and beautifully fragrant.",
+    ingredients: ["Sweet Almond Oil", "Shea Butter", "Cocoa Butter", "Vitamin E", "Natural Fragrance"],
+    benefits: [
+      "Makes skin soft and supple",
+      "Deeply moisturizes the skin",
+      "Provides long-lasting hydration",
+      "Improves skin texture",
+      "Natural nourishment",
+    ],
+    usage: "Apply generously to clean, dry skin. Massage gently until fully absorbed. Use daily for best results, especially after bathing.",
+    image: "/images/4ca8eb_7742537b9a7b42a1a2d457c77dba2c31~mv2 (1).png",
+  },
+  {
+    id: "immunity-booster-syrup",
+    name: "Immunity Booster Syrup",
+    category: "syrups",
+    shortDescription: "Ayurvedic immunity booster syrup for energy, immunity and performance",
+    description: "Our Immunity Booster Syrup is a powerful Ayurvedic formulation designed to enhance your body's natural defense system. This comprehensive health tonic boosts energy levels, strengthens immunity, and improves overall performance naturally.",
+    ingredients: ["Amla", "Giloy", "Tulsi", "Ashwagandha", "Honey", "Natural Herbs"],
+    benefits: [
+      "Helpful in treating energy deficiency",
+      "Boosts natural immunity",
+      "Enhances physical performance",
+      "Supports overall health",
+      "Natural Ayurvedic formulation",
+    ],
+    usage: "Take 10-15ml twice daily with water or as directed by healthcare practitioner. Best taken on empty stomach for optimal absorption.",
+    image: "/images/4ca8eb_8d8658451a794285a2c7adeb2a24d914~mv2 (1).jpeg",
+  },
   {
     id: "ashwagandha-powder",
     name: "Ashwagandha Powder",
