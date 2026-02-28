@@ -19,7 +19,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Maharishi Atreya | Premium B2B Ayurvedic Products Manufacturer',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://maharishiatreya.com'),
+  title: {
+    default: 'Maharishi Atreya | Premium B2B Ayurvedic Products Manufacturer',
+    template: '%s | Maharishi Atreya',
+  },
   description: 'Leading manufacturer and exporter of premium Ayurvedic herbal products. GMP certified, ISO compliant. Trusted by distributors, wholesalers, and healthcare professionals worldwide.',
   keywords: 'ayurvedic products, herbal products, B2B ayurveda, ayurvedic manufacturer, herbal exporter, wholesale herbs, GMP certified, ISO certified',
   generator: 'Next.js',
@@ -27,6 +31,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Maharishi Atreya' }],
   creator: 'Maharishi Atreya',
   publisher: 'Maharishi Atreya',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   robots: {
     index: true,
     follow: true,
@@ -41,6 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
+    url: process.env.NEXT_PUBLIC_APP_URL || 'https://maharishiatreya.com',
     title: 'Maharishi Atreya | Premium B2B Ayurvedic Products',
     description: 'Leading manufacturer and exporter of premium Ayurvedic herbal products. GMP certified, ISO compliant.',
     siteName: 'Maharishi Atreya',
@@ -49,6 +59,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Maharishi Atreya | Premium B2B Ayurvedic Products',
     description: 'Leading manufacturer and exporter of premium Ayurvedic herbal products.',
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 }
 
@@ -66,6 +79,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
+        <meta name="theme-color" content="#2d5a3d" />
       </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <ErrorBoundary>
