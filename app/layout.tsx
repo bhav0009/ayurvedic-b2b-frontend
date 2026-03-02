@@ -21,10 +21,13 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://maharishiatreya.com'),
   title: {
-    default: 'Maharishi Atreya | Premium B2B Ayurvedic Products Manufacturer',
+    default: 'Maharishi Atreya Ayurveda – Manufacturer & Supplier of Ayurvedic Medicines and Herbal Products',
     template: '%s | Maharishi Atreya',
   },
-  description: 'Leading manufacturer and exporter of premium Ayurvedic herbal products. GMP certified, ISO compliant. Trusted by distributors, wholesalers, and healthcare professionals worldwide.',
+  description: 'Maharishi Atreya Ayurveda is an Ayurvedic product manufacturing and selling company. We provide authentic herbal medicines, Ayurvedic formulations, and natural health products prepared using traditional Ayurvedic principles.',
+  alternates: {
+    canonical: 'https://maharishiatreya.com/',
+  },
   keywords: 'ayurvedic products, herbal products, B2B ayurveda, ayurvedic manufacturer, herbal exporter, wholesale herbs, GMP certified, ISO certified',
   generator: 'Next.js',
   applicationName: 'Maharishi Atreya',
