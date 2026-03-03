@@ -149,7 +149,7 @@ export default function AboutPage() {
         {/* Quality Standards */}
         <section id="quality" className="px-4 py-16 sm:py-24">
           <div className="mx-auto max-w-7xl">
-            <div className="grid items-start gap-12 lg:grid-cols-2">
+            <div className="items-start">
               <div>
                 <p className="text-sm font-medium uppercase tracking-widest text-primary">
                   Quality Assurance
@@ -174,36 +174,6 @@ export default function AboutPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
-              <div
-                id="certifications"
-                className="rounded-lg border border-border bg-card p-8"
-              >
-                <h3 className="font-serif text-xl font-semibold text-card-foreground">
-                  Our Certifications
-                </h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  Internationally recognized certifications ensuring compliance
-                  for global markets
-                </p>
-                <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  {certifications.map((cert, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-3 rounded-md bg-secondary/50 p-3"
-                    >
-                      <BadgeCheck
-                        className="h-5 w-5 shrink-0 text-primary"
-                        aria-hidden="true"
-                      />
-                      <div>
-                        <p className="text-sm font-medium text-card-foreground">
-                          {cert.name}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           </div>

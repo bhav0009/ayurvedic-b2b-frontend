@@ -42,25 +42,27 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-3">
               <a
-                href="mailto:export@maharishiatreya.com"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
-              >
-                <Mail className="h-4 w-4" aria-hidden="true" />
-                export@maharishiatreya.com
-              </a>
-              <a
-                href="tel:+911234567890"
+                href="tel:+917011166857"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
               >
                 <Phone className="h-4 w-4" aria-hidden="true" />
-                +91 123 456 7890
+                +91-7011166857
+              </a>
+              <a
+                href="tel:+919416463399"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+              >
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                9416463399
               </a>
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
                 <span>
-                  Industrial Area, Sonipat,
+                  MAHARISHI ATREYA AYURVEDIC PHARMACY
                   <br />
-                  Haryana, India,123456
+                  M-11 Industrial Area, Sonepat 131001
+                  <br />
+                  Haryana, India
                 </span>
               </div>
             </div>

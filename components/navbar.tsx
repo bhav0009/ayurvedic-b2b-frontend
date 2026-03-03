@@ -23,10 +23,6 @@ export function Navbar() {
           <div className="flex h-10 items-center justify-between text-sm">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2 text-primary">
-                <Phone className="h-4 w-4" />
-                <span className="font-medium">+1 (555) 123-4567</span>
-              </div>
-              <div className="hidden sm:flex items-center gap-2 text-primary">
                 <Mail className="h-4 w-4" />
                 <span className="font-medium">info@maharishiatreya.com</span>
               </div>
@@ -115,7 +111,7 @@ export function Navbar() {
               <div className="pt-4 space-y-3">
                 <div className="flex items-center gap-2 px-4 py-2 text-sm text-primary">
                   <Phone className="h-4 w-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91-7011166857</span>
                 </div>
                 <Button asChild className="w-full bg-gradient-to-r from-primary to-green-600">
                   <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>

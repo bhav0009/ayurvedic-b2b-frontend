@@ -10,7 +10,7 @@ export function CertificationsSection() {
             Trust & Compliance
           </p>
           <h2 className="mt-4 font-serif text-3xl font-semibold text-foreground sm:text-4xl">
-            Globally Certified Quality
+            Certified Quality
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Our products meet stringent international standards, ensuring
@@ -18,7 +18,7 @@ export function CertificationsSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
           {certifications.map((cert, index) => (
             <div
               key={index}
@@ -27,14 +27,7 @@ export function CertificationsSection() {
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                 <BadgeCheck className="h-5 w-5" aria-hidden="true" />
               </div>
-              <div>
-                <h3 className="font-semibold text-card-foreground">
-                  {cert.name}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {cert.description}
-                </p>
-              </div>
+              
             </div>
           ))}
         </div>

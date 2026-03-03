@@ -23,32 +23,6 @@ export function IntroSection() {
             rigorous standards of modern global trade.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-3">
-          <div className="text-center">
-            <p className="font-serif text-4xl font-semibold text-primary">
-              500+
-            </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Products in Portfolio
-            </p>
-          </div>
-          <div className="text-center">
-            <p className="font-serif text-4xl font-semibold text-primary">
-              50+
-            </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Countries Served
-            </p>
-          </div>
-          <div className="text-center">
-            <p className="font-serif text-4xl font-semibold text-primary">
-              25+
-            </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Years of Excellence
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );

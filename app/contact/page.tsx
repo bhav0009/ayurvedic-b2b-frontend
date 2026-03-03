@@ -12,27 +12,21 @@ export const metadata: Metadata = {
 
 const contactInfo = [
   {
-    icon: <Mail className="h-5 w-5" />,
-    label: "Email",
-    value: "export@maharishiatreya.com",
-    href: "mailto:export@maharishiatreya.com",
+    icon: <Phone className="h-5 w-5" />,
+    label: "Phone",
+    value: "+91-7011166857",
+    href: "tel:+917011166857",
   },
   {
     icon: <Phone className="h-5 w-5" />,
     label: "Phone",
-    value: "+91 123 456 7890",
-    href: "tel:+911234567890",
-  },
-  {
-    icon: <MessageCircle className="h-5 w-5" />,
-    label: "WhatsApp",
-    value: "+91 123 456 7890",
-    href: "https://wa.me/911234567890",
+    value: "9416463399",
+    href: "tel:+919416463399",
   },
   {
     icon: <MapPin className="h-5 w-5" />,
     label: "Address",
-    value: "Industrial Area, Haridwar, Uttarakhand, India 249401",
+    value: "MAHARISHI ATREYA AYURVEDIC PHARMACY, M-11 Industrial Area, Sonepat 131001, Haryana, India",
     href: null,
   },
 ];

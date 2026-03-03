@@ -272,10 +272,6 @@ export const products: Product[] = [
 export const certifications = [
   { name: "GMP Certified", description: "Good Manufacturing Practice" },
   { name: "ISO 22000", description: "Food Safety Management" },
-  { name: "USDA Organic", description: "Certified Organic Products" },
-  { name: "FSSAI", description: "Food Safety Standards Authority of India" },
-
-  { name: "Kosher", description: "Kosher Certification" },
 ];
 
 export const whyChooseUs = [
@@ -283,11 +279,6 @@ export const whyChooseUs = [
     title: "Premium Quality",
     description: "Sourced from trusted farms and processed in state-of-the-art facilities with strict quality control.",
     icon: "shield-check",
-  },
-  {
-    title: "Global Certifications",
-    description: "GMP, ISO, USDA Organic, and multiple international certifications ensure compliance worldwide.",
-    icon: "award",
   },
   {
     title: "Sustainable Practices",
