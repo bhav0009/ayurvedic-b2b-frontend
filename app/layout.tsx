@@ -66,6 +66,13 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-icon.png',
+  },
 }
 
 export const viewport: Viewport = {
