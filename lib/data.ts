@@ -114,57 +114,9 @@ export const products: Product[] = [
     usage: "Take 10-15ml twice daily with water or as directed by healthcare practitioner. Best taken on empty stomach for optimal absorption.",
     image: "/images/4ca8eb_8d8658451a794285a2c7adeb2a24d914~mv2 (1).jpeg",
   },
-  {
-    id: "ashwagandha-powder",
-    name: "Ashwagandha Powder",
-    category: "powders",
-    shortDescription: "Premium organic Ashwagandha root powder for vitality and stress relief",
-    description: "Our Ashwagandha powder is sourced from organically grown Withania somnifera roots, carefully processed to preserve maximum potency. This adaptogenic herb has been used for over 3,000 years in Ayurvedic medicine to rejuvenate and restore the body.",
-    ingredients: ["100% Organic Ashwagandha Root (Withania somnifera)"],
-    benefits: [
-      "Supports healthy stress response",
-      "Promotes restful sleep",
-      "Enhances physical endurance",
-      "Supports cognitive function",
-      "Balances Vata and Kapha doshas",
-    ],
-    usage: "Mix 1/2 to 1 teaspoon with warm milk or water, once or twice daily, or as directed by healthcare practitioner.",
-    image: "/images/ashwagandha.jpg",
-  },
-  {
-    id: "triphala-capsules",
-    name: "Triphala Capsules",
-    category: "capsules",
-    shortDescription: "Balanced digestive support with three fruits formula",
-    description: "Triphala is a time-tested Ayurvedic formulation combining three powerful fruits: Amalaki, Bibhitaki, and Haritaki. Our capsules deliver standardized extracts for consistent digestive and detoxification support.",
-    ingredients: ["Amalaki (Emblica officinalis)", "Bibhitaki (Terminalia bellirica)", "Haritaki (Terminalia chebula)"],
-    benefits: [
-      "Supports healthy digestion",
-      "Gentle detoxification",
-      "Antioxidant properties",
-      "Balances all three doshas",
-      "Supports eye health",
-    ],
-    usage: "Take 2 capsules twice daily with water, preferably before meals or at bedtime.",
-    image: "/images/triphala.jpg",
-  },
-  {
-    id: "brahmi-oil",
-    name: "Brahmi Hair Oil",
-    category: "oils",
-    shortDescription: "Nourishing scalp and hair oil with Brahmi and coconut base",
-    description: "This traditional Brahmi oil is crafted using authentic Ayurvedic methods, infusing Brahmi (Bacopa monnieri) into pure coconut oil. Perfect for scalp massage and hair nourishment.",
-    ingredients: ["Coconut Oil", "Brahmi (Bacopa monnieri)", "Amla", "Bhringraj"],
-    benefits: [
-      "Nourishes scalp and hair",
-      "Supports healthy hair growth",
-      "Cooling and calming effect",
-      "Promotes mental clarity",
-      "Traditional stress relief",
-    ],
-    usage: "Warm slightly and massage into scalp. Leave for 30 minutes or overnight before washing. Use 2-3 times per week.",
-    image: "/images/brahmi-oil.jpg",
-  },
+
+
+
   {
     id: "tulsi-dried",
     name: "Organic Tulsi Leaves",
@@ -181,23 +133,6 @@ export const products: Product[] = [
     ],
     usage: "Steep 1 teaspoon in hot water for 5-10 minutes for tea. Can also be used in cooking or as directed.",
     image: "/images/tulsi.jpg",
-  },
-  {
-    id: "chyawanprash",
-    name: "Chyawanprash",
-    category: "formulations",
-    shortDescription: "Ancient rejuvenating jam with 40+ herbs",
-    description: "Our Chyawanprash follows the classical Ayurvedic recipe, combining over 40 herbs with Amla as the base. This time-honored Rasayana (rejuvenative) supports overall vitality and immune function.",
-    ingredients: ["Amla", "Ghee", "Honey", "Pippali", "Cardamom", "Cinnamon", "and 35+ traditional herbs"],
-    benefits: [
-      "Powerful immune support",
-      "Rich in Vitamin C",
-      "Supports respiratory health",
-      "Enhances vitality and energy",
-      "Traditional rejuvenative formula",
-    ],
-    usage: "Take 1-2 teaspoons daily, morning and evening, with warm milk or water.",
-    image: "/images/chyawanprash.jpg",
   },
   {
     id: "neem-powder",
@@ -233,40 +168,8 @@ export const products: Product[] = [
     usage: "Warm before use. Apply generously for full body massage. Allow to absorb for 15-20 minutes before bathing.",
     image: "/images/sesame-oil.jpg",
   },
-  {
-    id: "shatavari-capsules",
-    name: "Shatavari Capsules",
-    category: "capsules",
-    shortDescription: "Women's health support with Asparagus racemosus",
-    description: "Shatavari, meaning 'she who possesses a hundred husbands,' is the premier Ayurvedic herb for women's health. Our capsules contain standardized root extract for optimal benefits.",
-    ingredients: ["Shatavari Root Extract (Asparagus racemosus)"],
-    benefits: [
-      "Supports female reproductive health",
-      "Hormonal balance support",
-      "Nourishing and rejuvenating",
-      "Supports lactation",
-      "Balances Pitta and Vata",
-    ],
-    usage: "Take 1-2 capsules twice daily with water or milk, or as directed by healthcare practitioner.",
-    image: "/images/shatavari.jpg",
-  },
-  {
-    id: "ashwagandha-powder-2",
-    name: "Ashwagandha Powder",
-    category: "powders",
-    shortDescription: "Premium organic Ashwagandha root powder for vitality and stress relief",
-    description: "Our Ashwagandha powder is sourced from organically grown Withania somnifera roots, carefully processed to preserve maximum potency. This adaptogenic herb has been used for over 3,000 years in Ayurvedic medicine to rejuvenate and restore the body.",
-    ingredients: ["100% Organic Ashwagandha Root (Withania somnifera)"],
-    benefits: [
-      "Supports healthy stress response",
-      "Promotes restful sleep",
-      "Enhances physical endurance",
-      "Supports cognitive function",
-      "Balances Vata and Kapha doshas",
-    ],
-    usage: "Mix 1/2 to 1 teaspoon with warm milk or water, once or twice daily, or as directed by healthcare practitioner.",
-    image: "/images/ashwagandha.jpg",
-  },
+
+
 ];
 
 export const certifications = [
