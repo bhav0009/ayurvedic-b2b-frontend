@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ContactForm } from "@/components/contact/contact-form";
-import { Mail, Phone, MapPin, Globe, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Globe, MessageCircle } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -144,18 +144,6 @@ export default function ContactPage() {
                     </ul>
                   </div>
 
-                  {/* Google Maps */}
-                  <div className="mt-10 border-t border-border pt-8">
-                    <a
-                      href="https://maps.app.goo.gl/4iMNHTiKuWJkSMZA9"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-                    >
-                      <MapPin className="h-4 w-4" aria-hidden="true" />
-                      Get Directions on Google Maps
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
