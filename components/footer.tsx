@@ -82,6 +82,7 @@ export function Footer() {
                     src={locationMap}
                     alt="Maharishi Atreya location map view"
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
                     className="object-cover"
                   />
                 </div>

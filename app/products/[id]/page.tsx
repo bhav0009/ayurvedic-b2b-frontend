@@ -75,6 +75,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   className="object-cover"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
+                  placeholder="empty"
                 />
               </div>
 

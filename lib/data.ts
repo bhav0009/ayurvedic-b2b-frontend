@@ -276,7 +276,7 @@ export const products: Product[] = [
       "Suitable as a daily Ayurvedic digestive tonic when used as directed",
     ],
     usage: "Take as directed by your physician or healthcare professional.",
-    image: "/images/zyme.jpeg",
+    image: "/images/zyme.webp",
     disclaimer: "M.A. ZYME is an Ayurvedic proprietary medicine. The benefits described are based on the traditional uses of its individual herbal ingredients and are not intended to diagnose, treat, cure, or prevent any disease.",
   },
 

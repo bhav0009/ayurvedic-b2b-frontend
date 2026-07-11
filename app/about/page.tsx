@@ -91,12 +91,12 @@ export default function AboutPage() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
-                  src="/images/about-manufacturing.jpg"
-                  alt="Maharishi Atreya manufacturing facility"
+                  src="/images/logo.jpeg"
+                  alt="Maharishi Atreya Ayurvedic Pharmacy"
                   fill
                   priority
                   loading="eager"
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>

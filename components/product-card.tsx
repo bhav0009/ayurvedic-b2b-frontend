@@ -5,9 +5,10 @@ import { OptimizedImage } from "@/components/optimized-image";
 
 interface ProductCardProps {
   product: Product;
+  index?: number;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, index = 0 }: ProductCardProps) {
   return (
     <Link
       href={`/products/${product.id}`}
@@ -18,8 +19,8 @@ export function ProductCard({ product }: ProductCardProps) {
           src={product.image || "/placeholder.svg"}
           alt={product.name}
           fill
-          priority={true}
-          loading="eager"
+          priority={index < 3}
+          loading={index < 3 ? "eager" : "lazy"}
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
