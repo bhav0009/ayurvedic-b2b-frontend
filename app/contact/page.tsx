@@ -143,6 +143,36 @@ export default function ContactPage() {
                       ))}
                     </ul>
                   </div>
+
+                  {/* Google Maps */}
+                  <div className="mt-10 border-t border-border pt-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <MapPin className="h-5 w-5 text-primary" aria-hidden="true" />
+                      <h3 className="font-semibold text-card-foreground">Our Location</h3>
+                    </div>
+                    <div className="overflow-hidden rounded-lg border border-border">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3494.3!2d77.0!3d28.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db5a0a0a0a0a1%3A0x1!2sMaharishi+Atreya+Ayurvedic+Pharmacy%2C+M-11+Industrial+Area%2C+Sonepat+131001%2C+Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                        width="100%"
+                        height="200"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Maharishi Atreya location map"
+                        className="block"
+                      />
+                    </div>
+                    <a
+                      href="https://maps.app.goo.gl/4iMNHTiKuWJkSMZA9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                    >
+                      <MapPin className="h-4 w-4" aria-hidden="true" />
+                      Get Directions on Google Maps
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

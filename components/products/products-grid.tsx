@@ -1,62 +1,64 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ProductCard } from "@/components/product-card";
-import { getProducts, getCategories } from "@/lib/cms";
+import { products, categories } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Loading } from "@/components/loading";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import type { Product, Category } from "@/lib/data";
 
-const PRODUCTS_PER_PAGE = 8;
+const PRODUCTS_PER_PAGE = 9;
 
 export function ProductsGrid() {
+  const router = useRouter();
   const searchParams = useSearchParams();
-  const initialCategory = searchParams.get("category") || "all";
+  const pathname = usePathname();
+  const initialCategory = searchParams?.get("category") || "all";
+  const productsRef = useRef<HTMLDivElement>(null);
+
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [currentPage, setCurrentPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(false);
-  const [products, setProducts] = useState<Product[]>([]);
-  const [categories, setCategories] = useState<Category[]>([]);
-  const [dataLoading, setDataLoading] = useState(true);
 
   useEffect(() => {
-    async function loadData() {
-      try {
-        const [productsData, categoriesData] = await Promise.all([
-          getProducts(),
-          getCategories()
-        ]);
-        setProducts(productsData);
-        setCategories(categoriesData);
-      } catch (error) {
-        console.error('Failed to load data:', error);
-      } finally {
-        setDataLoading(false);
-      }
-    }
-    loadData();
-  }, []);
+    const category = searchParams?.get("category") || "all";
+    setActiveCategory(category);
+    setCurrentPage(1);
+  }, [searchParams]);
 
   const filteredProducts = useMemo(() => {
     if (activeCategory === "all") return products;
     return products.filter((product) => product.category === activeCategory);
-  }, [activeCategory, products]);
+  }, [activeCategory]);
 
   const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
   const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
   const paginatedProducts = filteredProducts.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
 
+  const scrollToProducts = () => {
+    productsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const setPage = (page: number) => {
+    setCurrentPage(page);
+    scrollToProducts();
+  };
+
   const handleCategoryChange = (category: string) => {
     setActiveCategory(category);
     setCurrentPage(1);
-  };
 
-  if (dataLoading) {
-    return <Loading text="Loading products..." />;
-  }
+    const params = new URLSearchParams(searchParams?.toString() ?? "");
+
+    if (category === "all") {
+      params.delete("category");
+    } else {
+      params.set("category", category);
+    }
+
+    const search = params.toString();
+    router.push(`${pathname}${search ? `?${search}` : ""}`);
+  };
 
   return (
     <div>
@@ -101,7 +103,7 @@ export function ProductsGrid() {
       </p>
 
       {/* Products Grid */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div ref={productsRef} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {paginatedProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
@@ -121,31 +123,31 @@ export function ProductsGrid() {
           <Button
             variant="outline"
             size="sm"
-            onClick={() => setCurrentPage(currentPage - 1)}
+            onClick={() => setPage(currentPage - 1)}
             disabled={currentPage === 1}
           >
             <ChevronLeft className="h-4 w-4" />
             Previous
           </Button>
-          
+
           <div className="flex gap-1">
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
               <Button
                 key={page}
                 variant={currentPage === page ? "default" : "outline"}
                 size="sm"
-                onClick={() => setCurrentPage(page)}
+                onClick={() => setPage(page)}
                 className="min-w-[40px]"
               >
                 {page}
               </Button>
             ))}
           </div>
-          
+
           <Button
             variant="outline"
             size="sm"
-            onClick={() => setCurrentPage(currentPage + 1)}
+            onClick={() => setPage(currentPage + 1)}
             disabled={currentPage === totalPages}
           >
             Next

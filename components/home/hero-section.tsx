@@ -67,14 +67,6 @@ export function HeroSection() {
 
         {/* Buttons */}
         <div className="mt-12 flex flex-col gap-4 sm:flex-row">
-          
-          <Button asChild size="lg" className="font-semibold">
-            <Link href="/contact">
-              Request Inquiry
-              <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-            </Link>
-          </Button>
-
           <Button
             asChild
             size="lg"
@@ -83,7 +75,6 @@ export function HeroSection() {
           >
             <Link href="/products">Explore Products</Link>
           </Button>
-
         </div>
       </div>
     </section>

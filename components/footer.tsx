@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Leaf, Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+import locationMap from "../assets/locationMap.jpeg";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
   company: [
@@ -25,7 +27,15 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <Leaf className="h-8 w-8 text-primary" aria-hidden="true" />
+              <div className="relative h-10 w-10 overflow-hidden rounded-full">
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="Maharishi Atreya Logo"
+                  fill
+                  sizes="40px"
+                  className="object-cover"
+                />
+              </div>
               <span className="font-serif text-xl font-semibold text-foreground">
                 Maharishi Atreya
               </span>
@@ -60,6 +70,31 @@ export function Footer() {
                   Haryana, India
                 </span>
               </div>
+              {/* Map */}
+              <a
+                href="https://maps.app.goo.gl/4iMNHTiKuWJkSMZA9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-lg border border-border hover:opacity-90 transition-opacity"
+              >
+                <div className="relative h-44 w-full">
+                  <Image
+                    src={locationMap}
+                    alt="Maharishi Atreya location map view"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/4iMNHTiKuWJkSMZA9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm font-medium text-[#1e3a5f] hover:underline"
+              >
+                <MapPin className="h-4 w-4" />
+                Get Directions
+              </a>
             </div>
           </div>
 

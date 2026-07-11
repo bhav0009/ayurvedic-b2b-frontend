@@ -34,7 +34,6 @@ const values = [
 ];
 
 const qualityStandards = [
-  "In-house analytical laboratory with HPLC, GC-MS, and microbiology testing",
   "Complete traceability from farm to finished product",
   "Climate-controlled storage and processing facilities",
   "Standardized extraction processes for consistent potency",
@@ -55,12 +54,10 @@ export default function AboutPage() {
                 About Maharishi Atreya
               </p>
               <h1 className="mt-4 font-serif text-4xl font-semibold text-foreground sm:text-5xl">
-                Our Story
+                About Maharishi Atreya Ayurvedic Pharmacy
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-                Founded with a vision to share the healing wisdom of Ayurveda
-                with the world, Maharishi Atreya has grown from a small family business
-                to a global leader in premium herbal products.
+                Established in 1991, Maharishi Atreya Ayurvedic Pharmacy is a trusted Ayurvedic manufacturer based in Sonipat, Haryana, India — dedicated to preserving the rich heritage of Ayurveda while integrating it with modern manufacturing practices.
               </p>
             </div>
           </div>
@@ -76,29 +73,19 @@ export default function AboutPage() {
                 </h2>
                 <div className="mt-6 space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Established in 1991, we, Maharishi Atreya is amongst the
-                    foremost names, indulged in manufacturing an extensive range of
-                    Ayurvedic Syrups, Tablets, Capsules, malt, Powders and Herbal
-                    Cosmetics etc. The offered products are extensively employed by
-                    patrons for their longer shelf life, rich taste and easy to digest.
-                    These products are available in different packing options that
-                    meet on patrons demand.
+                    Maharishi Atreya Ayurvedic Pharmacy, established in 1991, is a trusted Ayurvedic manufacturer based in Sonipat, Haryana, India. With over three decades of experience, the company is dedicated to preserving the rich heritage of Ayurveda while integrating it with modern manufacturing practices to deliver high-quality herbal healthcare products.
                   </p>
                   <p className="leading-relaxed">
-                    Exceptional quality is the foundation of our company, and is the
-                    driving force behind all decisions; whether it's which materials
-                    to purchase or the best way to serve our customers.
+                    At the heart of Maharishi Atreya's philosophy is a deep respect for nature. The pharmacy believes in sourcing herbs from their natural habitats and extracting their therapeutic properties using traditional Ayurvedic methods enhanced by modern manufacturing technology. This unique approach helps preserve the authenticity, purity, and efficacy of every formulation while ensuring consistent quality and safety.
+                  </p>
+                  <p className="leading-relaxed">
+                    The company manufactures a comprehensive range of Ayurvedic proprietary medicines, classical formulations, herbal syrups, capsules, tablets, powders, oils, cosmetics, and personal care products, carefully crafted using authentic herbs and time-tested Ayurvedic principles. Every product is developed with a strong commitment to purity, quality, and effectiveness, supporting holistic health and natural wellness.
+                  </p>
+                  <p className="leading-relaxed">
+                    With stringent quality control standards and ethically sourced raw materials, Maharishi Atreya serves healthcare professionals, distributors, wholesalers, and consumers across India and international markets. Every formulation reflects the company's dedication to excellence, innovation, and the timeless wisdom of Ayurveda.
                   </p>
                   <p className="leading-relaxed font-semibold text-primary">
-                    Our commitment to quality guarantees our success and your satisfaction.
-                  </p>
-                  <p className="leading-relaxed">
-                    Today, Maharishi Atreya operates state-of-the-art manufacturing
-                    facilities that blend traditional Ayurvedic knowledge with
-                    modern scientific rigor. Our team of Ayurvedic practitioners,
-                    botanists, and quality specialists work together to create
-                    products that honor ancient formulations while meeting
-                    contemporary standards.
+                    For more than 30 years, Maharishi Atreya Ayurvedic Pharmacy has remained committed to its mission of promoting natural healing through authentic Ayurveda — combining the wisdom of traditional herbal medicine with modern scientific manufacturing to provide safe, reliable, and effective healthcare solutions for generations to come.
                   </p>
                 </div>
               </div>

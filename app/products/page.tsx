@@ -40,10 +40,6 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        <CTASection
-          title="Need Custom Formulations?"
-          description="We offer private label services and can develop custom products to meet your specific market requirements."
-        />
       </main>
       <Footer />
     </>

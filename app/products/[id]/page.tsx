@@ -140,6 +140,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <p className="mt-3 text-muted-foreground">{product.usage}</p>
                 </div>
 
+                {/* Disclaimer */}
+                {product.disclaimer && (
+                  <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-4 dark:border-amber-900 dark:bg-amber-950/30">
+                    <p className="text-xs leading-relaxed text-amber-800 dark:text-amber-400">
+                      <span className="font-semibold">Disclaimer: </span>
+                      {product.disclaimer}
+                    </p>
+                  </div>
+                )}
+
+
                 {/* CTA */}
                 <div className="mt-10 rounded-lg border border-border bg-secondary/30 p-6">
                   <h3 className="font-semibold text-foreground">
