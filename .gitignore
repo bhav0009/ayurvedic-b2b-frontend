@@ -29,6 +29,15 @@ yarn-error.log*
 .env*.local
 .env.local
 .env
+.env.development
+.env.production
+.env.staging
+
+# Dev/internal scripts
+cleanup.sh
+
+# Sanity generated schema
+sanity-schemas.js
 .md
 
 # vercel
