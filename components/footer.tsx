@@ -72,7 +72,7 @@ export function Footer() {
               </div>
               {/* Map */}
               <a
-                href="https://maps.app.goo.gl/4iMNHTiKuWJkSMZA9"
+                href="https://maps.google.com/?q=28.9800,77.0159"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block overflow-hidden rounded-lg border border-border hover:opacity-90 transition-opacity"
@@ -88,7 +88,7 @@ export function Footer() {
                 </div>
               </a>
               <a
-                href="https://maps.app.goo.gl/4iMNHTiKuWJkSMZA9"
+                href="https://maps.google.com/?q=28.9800,77.0159"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm font-medium text-[#1e3a5f] hover:underline"
